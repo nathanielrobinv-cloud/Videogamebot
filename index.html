@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VideoGameBot</title>
+</head>
+
+<body>
+
+    <h1>🎮 Welcome to VideoGameBot!</h1>
+
+    <p>Your gaming customer support assistant.</p>
+
+    <h2>How can we help?</h2>
+
+    <ul>
+        <li>Game crashes</li>
+        <li>Login problems</li>
+        <li>Payment problems</li>
+        <li>Refund requests</li>
+        <li>Missing purchases</li>
+        <li>Lag problems</li>
+        <li>Account bans</li>
+    </ul>
+
+    <!-- Kommunicate chatbot -->
+    <script type="text/javascript">
+        (function(d, m){
+            var kommunicateSettings = 
+                {"appId":"3d0dd32b01495b520779cf7e3e56a39ec",
+                 "popupWidget":true,
+                 "automaticChatOpenOnNavigation":true};
+
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://widget.kommunicate.io/kommunicate-widget-3.0.min.js";
+
+            var h = document.getElementsByTagName("head")[0];
+            h.appendChild(s);
+
+            window.kommunicate = m;
+            m._globals = kommunicateSettings;
+        })(document, window.kommunicate || {});
+    </script>
+
+</body>
+</html>
